@@ -8,7 +8,7 @@ export const Container = styled.SafeAreaView`
 
 export const ProductContainer = styled.View`
   border-radius: 5px;
-  margin-top: 60px;
+  margin-top: 30px;
   flex: 1;
   flex-direction: row;
 `;
@@ -25,11 +25,13 @@ export const Product = styled.View`
   margin: 5px;
   flex: 1;
   flex-direction: row;
+  align-items: center;
 `;
 
 export const ProductImage = styled.Image`
-  height: 92px;
-  width: 92px;
+  height: 82px;
+  width: 82px;
+  margin-right: 10px;
 `;
 
 export const ProductTitleContainer = styled.View`

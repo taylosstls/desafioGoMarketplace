@@ -23,7 +23,14 @@ const AppRoutes: React.FC = () => (
     <App.Screen
       options={{
         headerShown: true,
-        headerTransparent: true,
+        // headerTransparent: true,
+        headerStatusBarHeight: 35,
+        headerStyle: {
+          backgroundColor: '#EBEEF8',
+          shadowOpacity: 0,
+          elevation: 0,
+        },
+        headerTitleAlign: 'center',
         headerTitle: () => <Image source={Logo} />,
       }}
       name="Dashboard"
@@ -31,14 +38,23 @@ const AppRoutes: React.FC = () => (
     />
     <App.Screen
       options={{
-        headerTransparent: true,
+        // headerTransparent: true,
+        headerStatusBarHeight: 35,
+        headerStyle: {
+          backgroundColor: '#EBEEF8',
+          shadowOpacity: 0,
+          elevation: 0,
+        },
+        headerTitleAlign: 'center',
         headerTitle: () => <Image source={Logo} />,
         headerBackTitleVisible: false,
         headerLeftContainerStyle: {
-          marginLeft: 20,
+          marginLeft: 10,
         },
 
-        headerBackImage: () => <FeatherIcon name="chevron-left" size={24} />,
+        headerBackImage: () => (
+          <FeatherIcon name="chevron-left" size={24} color="#E83F5B" />
+        ),
       }}
       name="Cart"
       component={Cart}
